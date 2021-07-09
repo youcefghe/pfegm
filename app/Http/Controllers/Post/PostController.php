@@ -355,7 +355,7 @@ class PostController extends Controller
             $message = auth()->user()->name." add new post in ".$community1->name ;
             $url= '/question/'.$post->id;
 
-            $user->notify(new JoinedUser($message,$url,auth()->user()->picture));
+//            $user->notify(new JoinedUser($message,$url,auth()->user()->picture));
         }
         $members = User_community::where('community_id',$request->community)->where('role','!=','request')->get()->count();
         $created_At =Carbon::parse($community1->created_at);

@@ -304,7 +304,7 @@
                 }
             },
         });
-        Echo.private('App.Models.User.'+user.id)
+        // Echo.private('App.Models.User.'+user.id)
             .notification((notification) => {
                 $.ajax({
                     url: "/notification/"+notification.id,
@@ -328,34 +328,34 @@
                     },
                 });
             });
-        Echo.private('Message.'+user.id) .listen('newMessageEvent', (e) => {
-            console.log(e.message);
-            $.ajax({
-                url: "/messageNotification",
-                type:"Get",
-                data:{
-                    messageId:e.message.id,
-                    _token: _token
-                },
-                success:function(response){
-                    document.getElementById('message-head').insertAdjacentHTML('afterend' , response);
-                    document.getElementById('notBadge1').innerText=$('#messagesMenu > .notification-box').length;
-                    document.getElementById('message-span').innerText='Messages ('+ $('#messagesMenu > .notification-box').length+ ')';
-                    $('#notBadge1').show();
-                    $('.no-messages').remove();
-                },
-            });
-            $.ajax({
-                url: "/message/toast/"+notification.id,
-                type:"Get",
-                success:function(response){
-                    document.getElementById('user-navbar').insertAdjacentHTML('beforeend' , response);
-                    $('.toast').toast({ autohide: false });
-                    $('.toast').toast('show');
-                    console.log(response);
-                },
-            });
-        });
+        // Echo.private('Message.'+user.id) .listen('newMessageEvent', (e) => {
+        //     console.log(e.message);
+        //     $.ajax({
+        //         url: "/messageNotification",
+        //         type:"Get",
+        //         data:{
+        //             messageId:e.message.id,
+        //             _token: _token
+        //         },
+        //         success:function(response){
+        //             document.getElementById('message-head').insertAdjacentHTML('afterend' , response);
+        //             document.getElementById('notBadge1').innerText=$('#messagesMenu > .notification-box').length;
+        //             document.getElementById('message-span').innerText='Messages ('+ $('#messagesMenu > .notification-box').length+ ')';
+        //             $('#notBadge1').show();
+        //             $('.no-messages').remove();
+        //         },
+        //     });
+        //     $.ajax({
+        //         url: "/message/toast/"+notification.id,
+        //         type:"Get",
+        //         success:function(response){
+        //             document.getElementById('user-navbar').insertAdjacentHTML('beforeend' , response);
+        //             $('.toast').toast({ autohide: false });
+        //             $('.toast').toast('show');
+        //             console.log(response);
+        //         },
+        //     });
+        // });
 
         // Echo.private('Message.'+user.id)
         //     .notification((notification) => {

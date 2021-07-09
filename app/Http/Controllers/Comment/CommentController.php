@@ -45,7 +45,7 @@ class CommentController extends Controller
         $data = auth()->user()->name." add comment on post ".$user->title ;
         $url= '/question/'.$request->post_id;
          $reciver =User::find($user->createdBy->id);
-        $reciver->notify(new JoinedUser($data,$url,auth()->user()->picture));
+//        $reciver->notify(new JoinedUser($data,$url,auth()->user()->picture));
         //return  response()->json(['user'=>$user]);
         return view('components.post.comment_section',['comment'=>$comment,'post'=>Post::where('id',$comment->post_id)->with('createdBy')->first()])->render();
     }
