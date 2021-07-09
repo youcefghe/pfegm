@@ -1,0 +1,17 @@
+// Fonts
+@import url('https://fonts.googleapis.com/css?family=Nunito');
+@import "~@mdi/font/scss/materialdesignicons.scss";
+// Variables
+@import 'variables';
+
+$theme-colors: (
+    primary: #17756D,
+    success: #b5d0ce,
+    default: #47b3a8,
+
+
+);
+// Bootstrap
+@import '~bootstrap/scss/bootstrap';
+// Admin Lte
+@import '~admin-lte/dist/css/adminlte.css';

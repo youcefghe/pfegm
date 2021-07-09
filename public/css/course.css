@@ -1,0 +1,249 @@
+
+#course-header, #course-instructor {
+    background: var(--primary);
+    color: white;
+}
+
+#course-header a {
+    text-decoration: none;
+}
+
+#course-updated {
+    font-size: .8rem !important;
+    letter-spacing: .0333333333em !important;
+    line-height: 1.25rem;
+    text-align: end;
+}
+
+#course-rating .rating {
+    font-size: 1.2rem !important;
+    font-weight: bold;
+}
+
+#course-rating .caption {
+    font-size: .8rem !important;
+}
+
+#course-header .skill-badge:hover {
+    background: #80808085;
+}
+
+#course-header .skill-badge {
+    color: white;
+    border: 1px solid white;
+}
+
+.video-empty {
+    /*width: 100%;*/
+    /*height: 100%;*/
+    background-color: var(--black);
+    color: #9c9c9c;
+    font-size: 1.2rem;
+    font-weight: 600;
+    /*text-align: center;*/
+}
+
+.video-empty img {
+    /*width: 9em;*/
+    /*margin-top: 12%;*/
+}
+
+#course-instructor img.rounded {
+    height: 45px;
+    width: auto;
+    border-radius: 50% !important;
+}
+
+
+#course-instructor p.instructor-name {
+    line-height: 1.4rem;
+    margin-block-end: 0;
+    font-size: 17px;
+}
+
+/* -------------------- Sidebar Accordion ---------------- */
+#accordionChapters {
+    box-shadow: 0 0 black, 0 0 black, 0 6px 4px -4px grey;
+}
+
+#accordionChapters .accordion-item {
+    border: 1px solid #e3e3e3;
+}
+
+#accordionChapters .accordion-item.active {
+    margin: 9px 0;
+    box-shadow: 0 3px 1px -2px rgba(0, 0, 0, .2), 0 2px 2px 0 rgba(0, 0, 0, .14), 0 1px 5px 0 rgba(0, 0, 0, .12);
+}
+
+#accordionChapters .accordion-button {
+    border: 0;
+}
+
+#accordionChapters .accordion-collapse {
+    border: 0;
+}
+
+#accordionChapters .accordion-button {
+    text-align: start;
+}
+
+#accordionChapters .accordion-button::after {
+    background-image: url("data:image/svg+xml,%3csvg xmlns= 'http://www.w3.org/2000/svg' viewBox= '0 0 16 16' fill= '%23AAAAAA' %3e%3cpath fill-rule= 'evenodd' d= 'M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z' /%3e%3c/svg%3e");
+}
+
+
+#accordionChapters .accordion-button:not(.collapsed) {
+    color: var(--black);
+    background-color: #B2DFDB;
+}
+
+#accordionChapters .accordion-button:not(.collapsed)::after {
+    background-image: url("data:image/svg+xml,%3csvg xmlns= 'http://www.w3.org/2000/svg' viewBox= '0 0 16 16' fill= '%23000000' %3e%3cpath fill-rule= 'evenodd' d= 'M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z' /%3e%3c/svg%3e");
+}
+
+#accordionChapters .accordion-body {
+    padding: 0;
+}
+
+#accordionChapters .list-group {
+    border-radius: 0;
+    padding-inline-start: 0;
+}
+
+#accordionChapters .list-group-item {
+    padding-inline-start: 16px;
+    padding-block-start: .4rem;
+    padding-block-end: .4rem;
+    border: 0;
+}
+
+#accordionChapters .list-group-item.active {
+    z-index: 2;
+    color: var(--black);
+    background-color: initial;
+
+}
+
+#accordionChapters .accordion-button:focus {
+    z-index: initial;
+    border-color: #B2DFDB;
+    outline: 0;
+    box-shadow: none;
+}
+
+#accordionChapters .list-group-item i {
+    color: var(--primary);
+}
+
+#accordionChapters .list-group-item.disabled {
+    color: #bcbbbb;
+}
+
+#accordionChapters .list-group-item.disabled i {
+    color: #d6d6d6;
+}
+
+#accordionChapters .list-group-item i.state {
+    margin-inline-end: 4px;
+}
+
+#accordionChapters i.cursor {
+    margin-inline-start: -29px;
+    margin-block-end: -47px;
+    margin-block-start: -7px;
+}
+
+#accordionChapters .accordion-button::after {
+    margin-inline-end: 0;
+    margin-inline-start: auto;
+}
+
+/* -------------------- Section Accordion ---------------- */
+
+#accordion-sections .accordion-item {
+    border: none;
+}
+
+#accordion-sections .accordion-header {
+    padding-block-start: 6px;
+}
+
+#accordion-sections .accordion-button {
+    color: var(--black);
+    background-color: initial;
+    padding: 0;
+}
+
+#accordion-sections .accordion-button:not(.collapsed)::after {
+    background-image: url("data:image/svg+xml,%3csvg xmlns= 'http://www.w3.org/2000/svg' viewBox= '0 0 16 16' fill= '%23000000' %3e%3cpath fill-rule= 'evenodd' d= 'M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z' /%3e%3c/svg%3e");
+}
+
+#accordion-sections .accordion-button:focus {
+    z-index: initial;
+    outline: 0;
+    box-shadow: none;
+}
+
+#accordion-sections h3 {
+    margin-block-end: 0;
+}
+
+#accordion-sections .accordion-button {
+    border: none;
+    border-block-end: 1px solid #b4b4b4;
+    padding-block-start: 6px;
+    padding-block-end: 0;
+    min-height: 32px;
+}
+
+#accordion-sections .accordion-collapse {
+    border: none;
+}
+
+#accordion-sections .accordion-body {
+    padding: .4rem 0;
+}
+
+#accordion-sections .accordion-button::after {
+    transform: rotate(-90deg);
+}
+
+#accordion-sections .accordion-button:not(.collapsed)::after {
+    transform: rotate(0deg);
+}
+
+/* live view ---------------- */
+.live-box {
+    border: 2px dashed var(--primary);
+    padding: 15px;
+    min-height: 12rem;
+}
+
+.live-box .provider-icon {
+    width: 3rem;
+    margin: 12px;
+}
+
+.live-box .datetime {
+    font-size: 1.8rem;
+    font-family: system-ui, sans-serif;
+}
+
+.live-box #countdown {
+    font-size: 1.2rem;
+    font-family: system-ui, sans-serif;
+}
+
+.live-box #countdown span {
+    margin-inline-start: 12px;
+    font-size: 2rem;
+}
+
+.live-box #countdown.warning {
+    color: red;
+}
+
+.live-box #countdown.finished {
+    display: none;
+}
+
